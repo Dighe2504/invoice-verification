@@ -42,13 +42,13 @@ sap.ui.define([
 		},
 
 		handleOpen: function (oEvent) {
-			debugger;
+		//	debugger;
 			var oButton = oEvent.getSource();
 
 			var oView = this.getView();
 			// this.oDialog = oView.byId("idrequireddatefilterdialog");
 			if (!this.ActionSheet) {
-				debugger;
+				//debugger;
 				this.ActionSheet = sap.ui.xmlfragment(oView.getId(), "demo.Splitapp.fragments.ActionSheet", this);
 				oView.addDependent(this.ActionSheet);
 			}

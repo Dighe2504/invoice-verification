@@ -15,13 +15,13 @@ sap.ui.define([
 		},
 
 		handleListItemPress: function (oEvent) {
-		debugger;
+		//debugger;
 /*	this._showDetail(oEvent.getParameter("myList"));*/
 //	this._showDetail();
 //	var title =	oEvent.getSource().getTitle();
 //	MessageToast.show(title);
 
-var title = oEvent.getSource().mProperties.title;
+//var title = oEvent.getSource().mProperties.title;
 // alert(title);
 		// 	var selectedItem = oEvent.getSource().getselected;
 
@@ -39,7 +39,7 @@ var title = oEvent.getSource().mProperties.title;
 
 			// 		// var list = sap.ui.getCore().byId("myList");
 			// 		// list.setSelectedItem(list.getItems()[0], true, true);
-	var sPath =	oEvent.getParameters().listItem.oBindingContexts.MasterJsonModel.sPath;	
+//	var sPath =	oEvent.getParameters().listItem.oBindingContexts.MasterJsonModel.sPath;	
 		//	var sPath = oEvent.oSource.oBindingContexts.MasterJsonModel.sPath; // /pr/0
 			var sPath = sPath.slice(9); // 0
 		var oDetailData = 	this.getView().getModel("MasterJsonModel").getData().Product[sPath]; //
@@ -49,7 +49,7 @@ var title = oEvent.getSource().mProperties.title;
 			this.getView().setModel(oModel2, "oModel2");
 		
 			this.getOwnerComponent().getModel("oModel2").setData(oDetailData);
-				debugger;
+				//debugger;
 			//this.getOwnerComponent()
 		},
 		

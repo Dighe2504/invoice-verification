@@ -7,7 +7,7 @@ sap.ui.define([
 	
 	onPressSplit: function (oEvent) {
 		
-		debugger;
+		//debugger;
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("app");
 
