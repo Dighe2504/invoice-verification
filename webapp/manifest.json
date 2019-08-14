@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"_version": "1.7.0",
 	"sap.app": {
 		"id": "com.ifx.approval.Z_MYIBX_INV",
@@ -75,5 +76,125 @@
 	"sap.platform.abap": {
 		"uri": "/sap/bc/ui5_ui5/sap/z_myibx_inv/webapp",
 		"_version": "1.1.0"
+=======
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "demo.Splitapp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "demo.Splitapp.view.app",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "demo.Splitapp.view",
+				"controlAggregation": "detailPage",
+				"clearTarget": false,
+				"controlID": "splitapp"
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "Master",
+				"view": "Master",
+				"targetAggregation": "masterPages",
+				"targetControl": "splitapp",
+				"subroutes": [{
+					"pattern": "",
+					"name": "Detail",
+					"view": "Detail",
+					"targetAggregation": "detailPages"
+				}]
+
+			},
+			 {
+				"name": "app",
+				"pattern": "",
+				"target": "app",
+				"view": "app",
+				"targetAggregation": "pages"
+				
+			}],
+			"targets": {
+				"First_Page": {
+					"viewType": "XML",
+					"viewName": "First_Page",
+					"viewLevel": 1,
+					"viewId": "First_Page"
+				},
+				"app": {
+					"viewType": "XML",
+					"viewName": "app",
+					"viewLevel": 1,
+					"viewId": "app"
+				}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "demo.Splitapp.i18n.i18n"
+				}
+			},
+		"MasterJsonModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"oModel2": {
+				"type": "sap.ui.model.json.JSONModel"
+			}
+		},
+		
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+>>>>>>> refs/heads/master
 	}
 }

@@ -6,6 +6,7 @@
       "target": {
         "type": "service",
         "name": "sapui5",
+<<<<<<< HEAD
         "entryPath": "/resources",
         "version": "1.44.45"
       },
@@ -27,6 +28,18 @@
         "name": "sapui5",
         "entryPath": "/test-resources",
         "version": "1.44.45"
+=======
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+>>>>>>> refs/heads/master
       },
       "description": "SAPUI5 Test Resources"
     }

@@ -1,0 +1,82 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.Splitapp.controller.Master"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Accountant Main menu options">
+				<!--<Button icon="sap-icon://filter" press="onPress" ariaLabelledBy="actionButtonLabel"/>-->
+				<subHeader>
+					<Bar>
+						<contentLeft>
+							<SearchField liveChange="onSearch" search="handleSearch"/>
+							<!--<sap-icon "synchronize" ></sap-icon>-->
+							<!--<core:Icon src="sap-icon://refresh" size="21px" color="black" press="refreshTriggered"/>-->
+							<Button icon="sap-icon://refresh" press="onPress" ariaLabelledBy="actionButtonLabel"/>
+						</contentLeft>
+					</Bar>
+				</subHeader>
+				<content>
+					<List id="myList" items="{MasterJsonModel>/Product}" select="handleListItemPress" itemPress="handleListItemPress"
+						selectionChange="handleListItemPress">
+						<ObjectListItem type="Navigation" title="{MasterJsonModel>ProductName}">
+							<firstStatus>
+								<ObjectStatus text="Overdue" state="Error"/>
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="{MasterJsonModel>ProductId}"/>
+								<ObjectAttribute text="{MasterJsonModel>ProductWeight}"/>
+							</attributes>
+						</ObjectListItem>
+					</List>
+					<!--<List id="myList" >-->
+					<!--	<items>-->
+					<!--		<ObjectListItem title="Malays - 5700002290" type="Active" press="handleListItemPress">-->
+					<!--			<firstStatus>-->
+					<!--				<ObjectStatus text="Overdue" state="Error"/>-->
+					<!--			</firstStatus>-->
+					<!--			<attributes>-->
+					<!--				<ObjectAttribute text="INTERFACES"/>-->
+					<!--				<ObjectAttribute text="Due on 19.12.2018"/>-->
+					<!--			</attributes>-->
+					<!--		</ObjectListItem>-->
+					<!--		<ObjectListItem title="IV: SINGAPORE TELECOMMUNICATIONS L" type="Active" press="handleListItemPress">-->
+					<!--			<firstStatus>-->
+					<!--				<ObjectStatus text="Overdue" state="Error"/>-->
+					<!--			</firstStatus>-->
+					<!--			<attributes>-->
+					<!--				<ObjectAttribute text="INTERFACES"/>-->
+					<!--				<ObjectAttribute text="Due on 19.12.2018"/>-->
+					<!--			</attributes>-->
+					<!--		</ObjectListItem>-->
+					<!--		<ObjectListItem title="IV: Dimension Data Germany Ag  Co - 7010505174" type="Active" press="handleListItemPress">-->
+					<!--			<firstStatus>-->
+					<!--				<ObjectStatus text="Overdue" state="Error"/>-->
+					<!--			</firstStatus>-->
+					<!--			<attributes>-->
+					<!--				<ObjectAttribute text="IF_WMB2B"/>-->
+					<!--				<ObjectAttribute text="Due on 19.12.2018"/>-->
+					<!--			</attributes>-->
+					<!--		</ObjectListItem>-->
+					<!--		<ObjectListItem title="IV:ASE SINGAPORE PTE LTD - 8600006879 - 1181007476" type="Active" press="handleListItemPress">-->
+					<!--			<firstStatus>-->
+					<!--				<ObjectStatus text="Overdue" state="Error"/>-->
+					<!--			</firstStatus>-->
+					<!--			<attributes>-->
+					<!--				<ObjectAttribute text="IF_WMB2B"/>-->
+					<!--				<ObjectAttribute text="Due on 19.12.2018"/>-->
+					<!--			</attributes>-->
+					<!--		</ObjectListItem>-->
+					<!--	</items>-->
+					<!--</List>-->
+				</content>
+				<footer>
+					<Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar1">
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://sort" press="onPress" ariaLabelledBy="actionButtonLabel"/>
+						<Button icon="sap-icon://filter" press="onPress" ariaLabelledBy="actionButtonLabel"/>
+						<Button icon="sap-icon://group-2" press="onPress" ariaLabelledBy="actionButtonLabel"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

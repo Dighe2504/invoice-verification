@@ -1,0 +1,44 @@
+{
+	"Product": [{
+		"Appropriation Request Number": "000000010000",
+		"Appropriation Short Description": "APRROPRICATE REQUEST FOR INV MEASUEMENT",
+		"Total Investment Amount": "48.000,00",
+		"WBS Number": "00000106",
+		"WBS Description": "S4P Fiori Project_PS"
+
+	}, {
+		"Appropriation Request Number": "000000010001",
+		"Appropriation Short Description": "INV MEASUEMENT",
+		"Total Investment Amount": "220.000,00",
+		"WBS Number": "00000107",
+		"WBS Description": "Apps Functionality Study"
+
+	}, {
+		"Appropriation Request Number": "000000200000",
+		"Appropriation Short Description": "g",
+		"Total Investment Amount": "220.000,00",
+		"WBS Number": "00000108",
+		"WBS Description": "Design of Apps"
+	}, {
+		"Appropriation Request Number": "000000200001",
+		"Appropriation Short Description": "P&g-02",
+		"Total Investment Amount": "263.000,00",
+		"WBS Number": "00000109",
+		"WBS Description": "Build of Apps"
+	}, {
+
+		"Appropriation Request Number": "000000200002",
+		"Appropriation Short Description": "P&g-02",
+		"Total Investment Amount": "263.000,00",
+		"WBS Number": "00000110",
+		"WBS Description": "Testing of Apps"
+	}, {
+
+		"Appropriation Request Number": "000000200005",
+		"Appropriation Short Description": "TV Admin",
+		"Total Investment Amount": "130.000,00",
+		"WBS Number": "00000111",
+		"WBS Description": "Documentation of Apps"
+	}]
+
+}

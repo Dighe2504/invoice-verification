@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<!--<Dialog id="idrequireddatefilterdialog" showHeader="false">-->
+		<ActionSheet title="Choose Your Action" showCancelButton="true" placement="Top">
+			<Button text="Image not readable" press="actionSelected"/>
+			<Button text="Remove from Workflow" press="actionSelected"/>
+			<Button text="Post Noted Item" press="actionSelected"/>
+			<Button text="Post Advance Payment" press="actionSelected"/>
+			<Button text="Assign Invoice to already posted document" press="actionSelected"/>
+		</ActionSheet>
+	<!--</Dialog>-->
+</core:FragmentDefinition>

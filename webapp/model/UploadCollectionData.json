@@ -1,0 +1,44 @@
+{
+	"currentLocationText": "Attachments",
+	"history": [ ],
+	"items": [
+		{
+			"type": "folder",
+			"documentId": "",
+			"fileName": "My Documents",
+			"mimeType": "",
+			"thumbnailUrl": "sap-icon://folder-blank",
+			"url": "",
+			"items": [
+				{
+					"type": "folder",
+					"documentId": "64469d2f-b3c4-a517-20d6-f91ebf85b9da",
+					"fileName": "Images",
+					"mimeType": "image/jpg",
+					"thumbnailUrl": "sap-icon://folder-blank",
+					"url": "",
+					"items": [
+						{
+							"documentId": "b68a7065-cc2a-2140-922d-e7528cd32172",
+							"fileName": "Picture of a woman.png",
+							"mimeType": "image/png",
+							"thumbnailUrl": "test-resources/sap/m/images/Woman_04.png",
+							"url": "test-resources/sap/m/images/Woman_04.png"
+						}
+					]
+				}, {
+					"documentId": "5082cc4d-da9f-2835-2c0a-8100ed47bcde",
+					"fileName": "Notes.txt",
+					"mimeType": "text/plain",
+					"thumbnailUrl": "",
+					"url": "test-resources/sap/m/demokit/sample/UploadCollection/LinkedDocuments/Notes.txt"
+				}
+			]
+		}, {
+			"documentId": "5082cc4d-da9f-2835-2c0a-8100ed47bcde",
+			"fileName": "Notes.txt",
+			"mimeType": "text/plain",
+			"thumbnailUrl": "",
+			"url": "test-resources/sap/m/demokit/sample/UploadCollection/LinkedDocuments/Notes.txt"
+		}	]
+}
