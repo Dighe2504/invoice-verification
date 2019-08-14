@@ -1,0 +1,54 @@
+{
+	"Product": [{
+			"ProductName": "IV: Kintetsu World Express (Malays - 5700002290 - ...",
+			"ProductId": "INTERFACES",
+			"ProductWeight": "Due on 19.12.2018",
+			"Appropriation Request Number": "000000010000",
+			"Appropriation Short Description": "R&D Account",
+			"Total Investment Amount": "48.000,00",
+			"WBS Number": "A-18-1985-96-AC16-I-01",
+			"WBS Description": "SolarWinds DameWare Mini Remote Licenses",
+				"Invoice Date": "Invoice Date: 20182512",
+			"SAP Number": "SAP Number: 0075010307"
+
+		}, {
+			"ProductName": "IV: SINGAPORE TELECOMMUNICATIONS L-...",
+			"ProductId": "INTERFACES",
+			"ProductWeight": "Due on 19.12.2018",
+			"Appropriation Request Number": "000000010001",
+			"Appropriation Short Description": "P&G Account",
+			"Total Investment Amount": "220.000,00",
+			"WBS Number": "A-18-1985-96-AC17-I",
+			"WBS Description": "Mindjet MindManager Enterprise Licenses",
+				"Invoice Date": "Invoice Date: 20182512",
+			"SAP Number": "SAP Number: 0075010307"
+
+		}, {
+			"ProductName": "Amount :IV:Dimension Data Germany Ag & Co - 70105057174 ",
+			"ProductId": "IF_WMB2B",
+			"ProductWeight": "Due on 19.12.2018",
+			"Appropriation Request Number": "000000200000",
+			"Appropriation Short Description": "Business Account",
+			"Total Investment Amount": "220.000,00",
+			"WBS Number": "A-18-1985-96-AC17-I-01",
+			"WBS Description": "Mindjet MindManager Enterprise Licenses",
+				"Invoice Date": "Invoice Date: 20182512",
+			"SAP Number": "SAP Number: 0075010307"
+
+		}, {
+			"ProductName": "IV:ASE SINGAPORE PTE LTD - 8600006879 - 1181007476",
+			"ProductId": "IF_WMB2B",
+			"ProductWeight": "Due on 19.12.2018",
+			"Appropriation Request Number": "000000200001",
+			"Appropriation Short Description": "Business Account",
+			"Total Investment Amount": "263.000,00",
+			"WBS Number": "A-18-1985-96-AC18-I",
+			"WBS Description": "MobileIron Licenses _ TradeUp & new lice",
+				"Invoice Date": "Invoice Date: 20182512",
+			"SAP Number": "SAP Number: 0075010307"
+
+		}
+
+	]
+
+}

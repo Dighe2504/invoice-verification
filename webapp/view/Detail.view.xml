@@ -1,0 +1,63 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns="sap.m" xmlns:table="sap.ui.table"
+	controllerName="demo.Splitapp.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="Accountant Main menu options" binding="{model/Product.json}" showHeader="true">
+				<content>
+					<IconTabBar id="idIconTabBarMulti" expanded=" " class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter icon="sap-icon://hint">
+								<ObjectHeader title="{oModel2>/ProductName}">
+									<attributes>
+										<ObjectAttribute text="{oModel2>/ProductId}"/>
+										<!--active="true"-->
+										<!--press="handleLinkObjectAttributePress" />-->
+										<ObjectAttribute text="{oModel2>/ProductWeight}"/>
+									</attributes>
+									<statuses>
+										<ObjectStatus text="{oModel2>/Invoice Date}" state="Success"/>
+										<ObjectStatus text="{oModel2>/SAP Number}" state="Success"/>
+									</statuses>
+								</ObjectHeader>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://accelerated"></IconTabFilter>
+							<IconTabFilter icon="sap-icon://attachment">
+								
+								<UploadCollection id="UploadCollection" uploadComplete="onUploadComplete" uploadButtonInvisible="true" uploadEnabled="false"
+									items="{oUploadcollectionmodel>/items}" fileDeleted="onFileDeleted">
+									<items>
+										<UploadCollectionItem documentId="documentId" fileName="{oUploadcollectionmodel>fileName}" visibleDelete="false" visibleEdit="false">
+											
+										</UploadCollectionItem>
+									</items>
+									<!--<toolbar>
+										<OverflowToolbar>
+											<Breadcrumbs id="breadcrumbs" currentLocationText="{/currentLocationText}" links="{/history}">
+												<Link press="onBreadcrumbPress" text="{name}"/>
+											</Breadcrumbs>
+											<ToolbarSpacer/>
+											<UploadCollectionToolbarPlaceholder/>
+										</OverflowToolbar>
+									</toolbar>-->
+								</UploadCollection>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar1">
+						<ToolbarSpacer/>
+						<!--<Button type="Accept" text="Approve" press="onPressAR"/>-->
+						<!--<Button type="Reject" text="Reject" press="onPressAR"/>-->
+						<Button type="Default" text="POST Invoice related to PO" press="onPressClick"/>
+						<Button type="Default" text="POST Invoice NOT related to PO" press="onPressClick"/>
+						<Button type="Default" text="Ask further information / clarification" press="onPressClick"/>
+						<Button type="Default" text="Show Log" press="onPressClick"/>
+						<Button id="Rework" type="Default" text="Rework item" press="handleOpen"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
